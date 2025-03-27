@@ -26,7 +26,7 @@ jobs:
         run: docker compose logs web
 
       - name: Run test inside web container
-        run: docker compose exec web curl http://localhost:5001/api/users
+        run: docker compose exec web curl http://localhost:5000/api/users
 
       - name: Shutdown Docker compose
         if: always()
